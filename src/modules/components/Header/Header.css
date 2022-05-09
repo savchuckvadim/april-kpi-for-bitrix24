@@ -1,0 +1,30 @@
+.App-logo {
+    height: 45px;
+    pointer-events: none;
+    margin-left: 15px;
+  }
+  
+.filters__container{
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.App-header {
+   position: sticky;
+   top: 0px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    background-color: white;
+    width: 98%;
+    border-radius: 2px;
+    margin: 10px 0;
+  }

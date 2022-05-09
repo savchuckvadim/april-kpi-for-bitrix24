@@ -1,0 +1,29 @@
+.statistics-area{
+    background-color: #282c34;
+    color: white;
+    min-height: 80vh;
+    width: 99%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-left: 5px; */
+
+}
+.allData{
+    
+    display: flex;
+    justify-content: flex-start;
+}
+
+.average, .conversion{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+.conversion{
+    margin-left: 30vh;
+}
