@@ -3,11 +3,11 @@
     bottom: 0 !important;
     background-color: #282c34;
     color: white;
-    max-height: 110px;
+    max-height: 115px;
 }
 
 .total-table-head-item{
-    height: 30px !important;
+    max-height: 10px !important;
     width: 150px !important;
     /* overflow: visible; */
     text-align: start !important;

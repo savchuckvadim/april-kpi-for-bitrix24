@@ -13,6 +13,7 @@ const mapStateToProps = (state) => {
     let appointment = 0
     let carried = 0
     let checks = 0
+    let fanChecks = 0
     let sales = 0
     if (rows.length > 0) {
 
@@ -28,6 +29,7 @@ const mapStateToProps = (state) => {
            
             carried += row.carried
             checks += row.checks
+            fanChecks += row.fanChecks
             sales += row.sales
         })
 
@@ -45,6 +47,7 @@ const mapStateToProps = (state) => {
         appointment: appointment,
         carried: carried,
         checks: checks,
+        fanChecks: fanChecks,
         sales: sales
     }
 }

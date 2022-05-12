@@ -7,14 +7,14 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import './Get-Sheets.css'
-import Statistics from "./Statistics/Statistics";
+import './Base-Table.css'
 
 
 
 
 
-const GetSheets = (props) => {
+
+const BaseTable = (props) => {
 
     let rows = props.allRows
 
@@ -36,10 +36,11 @@ const GetSheets = (props) => {
                             <TableCell className="table-head-item" align="left" >Дата</TableCell>
                             <TableCell className="table-head-item" align="right">Менеджеры</TableCell>
                             <TableCell className="table-head-item" align="right">наборов номера</TableCell>
-                            <TableCell className="table-head-item" align="right">звонки 30 сек. и более</TableCell>
+                            <TableCell className="table-head-item" align="right">звонки более 30сек </TableCell>
                             <TableCell className="table-head-item" align="right">назначенных презентаций</TableCell>
                             <TableCell className="table-head-item" align="right">проведенных презентаций</TableCell>
                             <TableCell className="table-head-item" align="right">счета</TableCell>
+                            <TableCell className="table-head-item" align="right">веерные счета</TableCell>
                             <TableCell className="table-head-item" align="right">продажи</TableCell>
 
                         </TableRow>
@@ -61,6 +62,7 @@ const GetSheets = (props) => {
                                 <TableCell className="table-item" sx={{ border: 0.5 }} align="right"> {row.appointment}</TableCell>
                                 <TableCell className="table-item" sx={{ border: 0.5 }} align="right"> {row.carried}</TableCell>
                                 <TableCell className="table-item" sx={{ border: 0.5 }} align="right"> {row.checks}</TableCell>
+                                <TableCell className="table-item" sx={{ border: 0.5 }} align="right"> {row.fanChecks}</TableCell>
                                 <TableCell className="table-item" sx={{ border: 0.5 }} align="right"> {row.sales}</TableCell>
 
                             </TableRow>
@@ -75,4 +77,4 @@ const GetSheets = (props) => {
 
 }
 
-export default GetSheets
+export default BaseTable

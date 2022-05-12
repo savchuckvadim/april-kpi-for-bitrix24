@@ -1,9 +1,9 @@
-import GetSheets from "./GetSheets"
+import BaseTable from "./Base-Table"
 import {
     connect
 } from "react-redux"
 import React from "react"
-import { getAllSheets } from "../redux/reducers/sheets-reducer"
+import { getAllSheets } from "../../../redux/reducers/sheets-reducer"
 
 const mapStateToProps = (state) => {
 
@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
 
     }
 }
-class GetSheetsContainer extends React.Component {
+class BaseTableContainer extends React.Component {
 
     componentDidMount() {
         this.props.getAllSheets(this.props.isButtonAction)
@@ -24,7 +24,7 @@ class GetSheetsContainer extends React.Component {
     render() {
 
         return (
-            <GetSheets
+            <BaseTable
                 allRows={this.props.allRows}
                 currentManager={this.props.currentManager}
             />
@@ -36,4 +36,4 @@ class GetSheetsContainer extends React.Component {
 export default connect(mapStateToProps, {
     getAllSheets
 
-})(GetSheetsContainer)
+})(BaseTableContainer)

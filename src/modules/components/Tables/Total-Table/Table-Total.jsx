@@ -16,6 +16,7 @@ const TableTotal = (props) => {
     let appointment = props.appointment
     let carried = props.carried
     let checks = props.checks
+    let fanChecks = props.fanChecks
     let sales = props.sales
     return (
         <TableContainer component={Paper} className='total-table'>
@@ -25,10 +26,11 @@ const TableTotal = (props) => {
                         <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="left" >Дата</TableCell>
                         <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">Менеджеры</TableCell>
                         <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">наборов номера</TableCell>
-                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">звонки 30 сек. и более</TableCell>
-                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">назначенных презентаций</TableCell>
-                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">проведенных презентаций</TableCell>
+                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">звонки более 30сек</TableCell>
+                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">назнач презентаций</TableCell>
+                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">провед презентаций</TableCell>
                         <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">счета</TableCell>
+                        <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">веерные счета</TableCell>
                         <TableCell sx={{ border: 0.5 }} className="total-table-head-item" align="right">продажи</TableCell>
 
                     </TableRow>
@@ -54,6 +56,7 @@ const TableTotal = (props) => {
                         <TableCell className="total-table-head-item" sx={{ border: 0.5 }} align="right"> {appointment}</TableCell>
                         <TableCell className="total-table-head-item" sx={{ border: 0.5 }} align="right"> {carried}</TableCell>
                         <TableCell className="total-table-head-item" sx={{ border: 0.5 }} align="right"> {checks}</TableCell>
+                        <TableCell className="total-table-head-item" sx={{ border: 0.5 }} align="right"> {fanChecks}</TableCell>
                         <TableCell className="total-table-head-item" sx={{ border: 0.5 }} align="right"> {sales}</TableCell>
 
                     </TableRow>

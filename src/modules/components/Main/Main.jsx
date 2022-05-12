@@ -1,4 +1,4 @@
-import GetSheetsContainer from "../Get-Sheets-Container"
+import BaseTableContainer from "../Tables/Base-Table/Base-Table-Container"
 import StatisticsContainer from "../Statistics/Statistics-Container"
 
 
@@ -13,7 +13,7 @@ const Main = (props) => {
     } else {
         return (
             <>
-                <GetSheetsContainer />
+                <BaseTableContainer />
               
             </>
         )
