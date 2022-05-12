@@ -3,6 +3,16 @@
     pointer-events: none;
     margin-left: 15px;
   }
+  @media screen and (max-width: 1000px) {
+    .App-logo{
+      height: 22px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .App-logo{
+      height: 17px;
+    }
+  }
   
 .filters__container{
     width: 100%;

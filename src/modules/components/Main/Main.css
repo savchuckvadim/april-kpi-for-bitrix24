@@ -1,0 +1,25 @@
+.main__desktop,
+.main__mobile {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main__desktop {
+        display: none;
+    }
+
+    .main__mobile {
+        display: block;
+    }
+}
+@media screen and (min-width: 800px) {
+    .main__desktop {
+        display: block ;
+    }
+
+    .main__mobile {
+        display:none ;
+    }
+}

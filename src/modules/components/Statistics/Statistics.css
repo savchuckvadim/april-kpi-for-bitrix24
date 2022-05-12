@@ -2,7 +2,7 @@
     background-color: #282c34;
     color: white;
     min-height: 80vh;
-    max-width: 99%;
+    width: 99%;
     padding: 0px;
     display: flex;
     flex-direction: column;

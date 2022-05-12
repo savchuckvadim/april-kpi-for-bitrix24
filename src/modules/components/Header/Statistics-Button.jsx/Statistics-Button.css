@@ -10,3 +10,8 @@
     min-width: 220px !important;
     padding: 0px !important;
 }
+@media screen and (max-width: 900px) {
+    .btn-container{
+      display: none;
+    }
+  }
