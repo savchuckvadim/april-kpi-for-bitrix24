@@ -1,5 +1,5 @@
 import {
-    getAllRows
+    getSheet
 } from "../../services/api"
 
 const ALL_SHEETS = 'ALL_SHEETS'
@@ -56,9 +56,9 @@ const sheetsReducer = (state = initialState, action) => {
                 row.numberSets = Number(row.numberSets)
                 row.callsOverThirdSek = Number(row.callsOverThirdSek)
                 row.appointment = Number(row.appointment)
-                row.appointment = Number(row.appointment)
                 row.carried = Number(row.carried)
                 row.checks = Number(row.checks)
+                row.fanChecks = Number(row.fanChecks)
                 row.sales = Number(row.sales)
                 return row
                 // row.date
@@ -105,7 +105,7 @@ const sheetsReducer = (state = initialState, action) => {
 
 export const getAllSheets = (isButtonAction) => (dispatch) => {
     if (!isButtonAction) {
-        getAllRows().then(res => {
+        getSheet().then(res => {
             let allRows = setAllSheets(res)
             let managers = [...new Set(res.map(res => (res.manager)))]
             let managersAction = setManagers(managers)

@@ -9,7 +9,7 @@ const instance = axios.create({
 })
 //url https://script.google.com/macros/s/AKfycby4mo1ga2FHPuJ1aulWASyW0NGuHlVUpWf85lDNiLXc9ZQwO0unDciUMXipmeNzALesog/exec
 //идентификатор приложения развертывания AKfycby4mo1ga2FHPuJ1aulWASyW0NGuHlVUpWf85lDNiLXc9ZQwO0unDciUMXipmeNzALesog
-export const getAllRows = () => {
+export const getSheet = () => {
  
     return instance.get(`/exec`)
         .then((response) => {
