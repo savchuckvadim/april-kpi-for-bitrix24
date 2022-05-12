@@ -5,10 +5,10 @@ const Statistics = (props) => {
 
         <div className="statistics-area">
             <h1>Менеджер:   {props.managers}</h1>
-            <h2>{props.dates}</h2>
+            <h2>{props.dates}  рабочих дней: {props.period} </h2>
             <div className='allData'>
                 <div className='average'>
-                    <h2>В среднем за период: {props.period} рабочих дней</h2>
+                    <h2>В среднем за период:  </h2>
                     <div><p>наборов номера: {props.avargeNumberSets} звонков в день </p> </div>
                     <div><p>звонки 30 сек. и более: {props.avargeCallsOverThirdSek} звонков в день</p></div>
                     <div><p>назначенных презентаций: {props.avargeAppointment} презентаций в день </p></div>
