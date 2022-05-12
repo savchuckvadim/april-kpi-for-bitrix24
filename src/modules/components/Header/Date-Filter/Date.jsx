@@ -18,26 +18,36 @@ const Date = (props) => {
       <LocalizationProvider dateAdapter={DateFnsAdapter}>
         <DatePicker
         className='date-from'
-          label="Basic example"
+          label="с"
+          inputFormat="dd/MM/yyyy"
+          
           value={value1}
           onChange={(newValue) => {
             setValue1(newValue);
 
             props.changeDate( props.currentManager, newValue, props.dateTo)
           }}
-          renderInput={(params) => <TextField {...params} />}
+          renderInput={(params) => <TextField
+            sx={{ width: 180 }}
+            size='small' {...params} 
+            />}
         />
       </LocalizationProvider>
       <LocalizationProvider dateAdapter={DateFnsAdapter}>
         <DatePicker
          className='date-to'
-          label="Basic example"
+          label="по"
+          inputFormat="dd/MM/yyyy"
           value={value2}
           onChange={(newValue) => {
             setValue2(newValue);
             props.changeDate( props.currentManager, props.dateFrom, newValue)
           }}
-          renderInput={(params) => <TextField {...params} />}
+          renderInput={(params) => <TextField
+            sx={{ width: 180 }}
+            size='small' 
+            {...params} 
+            />}
         />
       </LocalizationProvider>
     </div>

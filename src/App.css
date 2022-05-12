@@ -1,4 +1,39 @@
 .App {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #F4F4F4;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+p, h1, h2, h3{
+  font-family: 'Inter', ;
+}
+
+h1{
+  font-weight: 700;
+  /* font-size: 24px; */
+}
+p{
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
+/* #root{
+  margin: 0;
+  padding: ;
+} */
+
+
+
+.App {
   text-align: center;
   background-color: #282c34;
   display: flex;

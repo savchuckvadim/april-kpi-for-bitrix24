@@ -1,5 +1,5 @@
 .App-logo {
-    height: 45px;
+    height: 32px;
     pointer-events: none;
     margin-left: 15px;
   }
@@ -14,10 +14,11 @@
 
 }
 
+
 .App-header {
    position: sticky;
    top: 0px;
-    min-height: 80px;
+    min-height: 55px;
     display: flex;
     flex-direction: row;
     align-items: center;
