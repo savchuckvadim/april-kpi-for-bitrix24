@@ -18,7 +18,40 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
     flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  
+    .conversion {
+
+        margin-left: 0vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .statistics-area {
+        width: 80%;
+    }
+
+    .allData {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .average,
+    .conversion {
+
+        padding: 16px;
+        margin: 16px;
+        width: 300px;
+        height: 250px;
+        border-radius: 20px;
+        /* box-shadow: 5px 3px 3px rgb(49, 214, 226); */
+    }
 }
 
 .average,
@@ -30,14 +63,33 @@
 
     background-color: rgb(255, 255, 255);
     color: black;
-    padding: 16px;
+    padding: 22px;
     margin: 16px;
     width: 400px;
     height: 350px;
     border-radius: 20px;
-    /* box-shadow: 5px 3px 3px rgb(49, 214, 226); */
+    box-shadow: 5px 3px 3px rgb(109, 36, 204);
 }
-
+.statistics__title{
+    margin-left: 16px;
+}
+.block__title{
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
 .conversion {
     margin-left: 30vh;
+}
+
+.result{
+    font-weight: 600;
+}
+.result__wrapper{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

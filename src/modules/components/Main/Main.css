@@ -2,9 +2,15 @@
 .main__mobile {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
+.main__mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 @media screen and (max-width: 800px) {
     .main__desktop {
         display: none;
