@@ -5,8 +5,11 @@ import MainContainer from './modules/components/Main/Main-Container';
 import { TableTotalContainer } from './modules/components/Tables/Total-Table/Table-Total-Container';
 
 function App() {
+
+
   return (
     <div className="App">
+     
       <Header />
       <div className='table__container'>
      
